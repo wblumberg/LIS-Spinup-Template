@@ -44,8 +44,6 @@ Rhone AGG forcing directory:            ./MET_FORCING/RHONE/
 Rhone AGG domain x-dimension size: 5
 Rhone AGG domain y-dimension size: 6
 
-GLDAS forcing directory:                ./MET_FORCING/GLDAS_GMAO/
-
 GFS forcing directory:                  ./MET_FORCING/GFS/
 GFS domain x-dimension size: 512
 GFS domain y-dimension size: 256
@@ -58,7 +56,5 @@ NARR domain x-dimension size:           768
 NARR domain y-dimension size:           386
 NARR domain z-dimension size:           30
 
-GEOS5 forecast forcing directory:       ./MET_FORCING/GEOS5/
-GEOS forecast forcing number of ensemble members: 11
 
 

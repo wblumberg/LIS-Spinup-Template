@@ -1,0 +1,26 @@
+#------------------------------------------------------------------------------
+# Parameters
+#------------------------------------------------------------------------------
+LIS domain and parameter data file: lis_input.d01.nc
+Landmask data source:            LDT LDT LDT
+Landcover data source:           LDT LDT LDT
+Soil texture data source:        LDT LDT LDT
+Soil fraction data source:       none none none
+Soil color data source:          none none none
+Elevation data source:           LDT  LDT  LDT
+Slope data source:               LDT  LDT  LDT
+Aspect data source:              none  LDT  LDT
+Curvature data source:           none none none
+LAI data source:                 none none none
+SAI data source:                 none none none
+Albedo data source:              LDT  LDT  LDT
+Max snow albedo data source:     LDT  LDT  LDT
+Greenness data source:           LDT  LDT  LDT
+Roughness data source:           none none none
+Porosity data source:            none none none
+Ksat data source:                none none none
+B parameter data source:         none none none
+Quartz data source:              none none none
+Emissivity data source:          none none none
+
+

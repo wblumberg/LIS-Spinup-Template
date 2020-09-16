@@ -1,0 +1,64 @@
+#------------------------------------------------------------------------------
+# Forcings
+#------------------------------------------------------------------------------
+NLDAS2 forcing directory:               ./MET_FORCING/NLDAS2.FORCING   
+NLDAS2 elevation map:
+NLDAS2 data center source:              "GES-DISC" 
+NLDAS2 use model level data:            0 
+NLDAS2 use model based swdown:          0  
+NLDAS2 use model based precip:          0  
+NLDAS2 use model based pressure:        0 
+
+# NESDIS greenness settings and MODIS RT LAI
+NESDIS greenness data directory:        ./LS_PARAMETERS/GVF_NESDIS/ 
+MODIS RT LAI data directory:            ./LS_PARAMETERS/MODIS/MCD15A2.005/
+
+# SPORT greenness settings
+SPORT greenness data directory:         ./LS_PARAMETERS/GVF_SPORT/GVF_COMBINED_GLOBAL/gvf_SPORT_3KM 
+SPORT GVF lower left lat:       -59.985
+SPORT GVF lower left lon:       -179.985
+SPORT GVF upper right lat:      89.985
+SPORT GVF upper right lon:      179.985
+SPORT GVF resolution (dx):      0.03
+SPORT GVF resolution (dy):      0.03
+SPORT GVF use realtime mode:    1
+
+#VIIRS greenness settings
+VIIRS greenness data directory:         ./LS_PARAMETERS/GVF_SPORT/NESDIS_GVF_LISREAL/gvf_VIIRS_4KM
+VIIRS GVF use realtime mode:            1
+VIIRS GVF lower left lat:               -89.982
+VIIRS GVF lower left lon:               -179.982
+VIIRS GVF upper right lat:              89.982
+VIIRS GVF upper right lon:              179.982
+VIIRS GVF resolution (dx):              0.036
+VIIRS GVF resolution (dy):              0.036
+
+
+# Forcing directories and settings for different datasets
+GDAS forcing directory:                 ./MET_FORCING/GDAS/
+GEOS forcing directory:                 ./MET_FORCING/GEOS/
+ECMWF forcing directory:                ./MET_FORCING/ECMWF/
+PRINCETON forcing directory:            ./MET_FORCING/PRINCETON/
+
+Rhone AGG forcing directory:            ./MET_FORCING/RHONE/
+Rhone AGG domain x-dimension size: 5
+Rhone AGG domain y-dimension size: 6
+
+GLDAS forcing directory:                ./MET_FORCING/GLDAS_GMAO/
+
+GFS forcing directory:                  ./MET_FORCING/GFS/
+GFS domain x-dimension size: 512
+GFS domain y-dimension size: 256
+GFS number of forcing variables: 10
+
+MERRA-Land forcing directory:           ./MET_FORCING/MERRA-Land/
+
+NARR forcing directory:                 ./MET_FORCING/NARR/
+NARR domain x-dimension size:           768
+NARR domain y-dimension size:           386
+NARR domain z-dimension size:           30
+
+GEOS5 forecast forcing directory:       ./MET_FORCING/GEOS5/
+GEOS forecast forcing number of ensemble members: 11
+
+

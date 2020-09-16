@@ -1,0 +1,26 @@
+umask 022
+. /usr/share/modules/init/bash
+module purge
+unset LD_LIBRARY_PATH
+module load other/comp/gcc-6.3
+module load comp/intel-17.0.4.196
+module load lib/mkl-17.0.4.196
+module load mpi/sgi-mpt-2.16
+module load other/SSSO_Ana-PyD/SApd_4.2.0_py3.5
+NUWRFLIB=/discover/nobackup/projects/nu-wrf/lib/intel-intelmpi
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64
+export LD_LIBRARY_PATH=$NUWRFLIB/fortrangis/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$NUWRFLIB/gdal/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$NUWRFLIB/jasper/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$NUWRFLIB/netcdf4/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$NUWRFLIB/esmf/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$NUWRFLIB/hdf5/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$NUWRFLIB/hdf4/lib:$LD_LIBRARY_PATH
+export PATH=$NUWRFLIB/netcdf4/bin:$PATH
+LISDIR=/discover/nobackup/projects/lis
+DATADIR=/discover/nobackup/projects/nu-wrf/regression_testing/data/Charney/wrf/arw_simple
+RUNDIR=%DIR%
+NUWRFDIR=/discover/nobackup/wgblumbe/nu-wrf-dev/
+EXEDIR=/discover/nobackup/wgblumbe/nu-wrf-dev/
+ulimit -s unlimited
+ulimit -v unlimited

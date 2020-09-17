@@ -7,10 +7,10 @@ Number of nests:    1
 Number of surface model types:    1
 Surface model types:            LSM
 Surface model output interval:  12hr
-Land surface model:             Noah.3.6
+Land surface model:             *LSMMODEL*
 Number of met forcing sources:   1
 Blending method for forcings:    overlay
-Met forcing sources:             NLDAS2
+Met forcing sources:             *METFORCING*
 Topographic correction method (met forcing): lapse-rate
 # No spatial downscaling for GDAS
 Spatial upscaling method (met forcing): average
@@ -27,17 +27,17 @@ Output model restart files:                1
 Output data format:                        netcdf
 Output naming style:                       "4 level hierarchy"
 Start mode:                                restart
-Starting year:                             %WRFSTARTYEAR%
-Starting month:                            %WRFSTARTMONTH%
-Starting day:                              %WRFSTARTDAY%
-Starting hour:                             %WRFSTARTHOUR%
-Starting minute:                           %WRFSTARTMIN%
+Starting year:                             *WRFSTARTYEAR*
+Starting month:                            *WRFSTARTMONTH*
+Starting day:                              *WRFSTARTDAY*
+Starting hour:                             *WRFSTARTHOUR*
+Starting minute:                           *WRFSTARTMIN*
 Starting second:                           0
-Ending year:                               %WRFENDYEAR%
-Ending month:                              %WRFENDMONTH%
-Ending day:                                %WRFENDDAY%
-Ending hour:                               %WRFENDHOUR%
-Ending minute:                             %WRFENDMIN%
+Ending year:                               *WRFENDYEAR*
+Ending month:                              *WRFENDMONTH*
+Ending day:                                *WRFENDDAY*
+Ending hour:                               *WRFENDHOUR*
+Ending minute:                             *WRFENDMIN*
 Ending second:                             0
 Undefined value:                          -9999
 Output directory:                         OUTPUT
@@ -55,8 +55,8 @@ Maximum number of slope bands per grid:            1
 Minimum cutoff percentage (slope bands):           0.10
 Maximum number of aspect bands per grid:           1
 Minimum cutoff percentage (aspect bands):          0.10
-Number of processors along x:    %NPX%
-Number of processors along y:    %NPY%
+Number of processors along x:    *NPX*
+Number of processors along y:    *NPY*
 Halo size along x: 0 
 Halo size along y: 0 
 Routing model:                   none
@@ -107,41 +107,12 @@ IMS data directory: none
 Radiative transfer model:  none
 
 #------------------------------------------------------------------------------
-# Parameters
-#------------------------------------------------------------------------------
-
-LIS domain and parameter data file: ./lis_input.d01.nc ./lis_input.d02.nc ./lis_input.d03.nc
-Landmask data source:            LDT LDT LDT
-Landcover data source:           LDT LDT LDT
-Soil texture data source:        LDT LDT LDT
-Soil fraction data source:       none none none
-Soil color data source:          none none none
-Elevation data source:           LDT  LDT  LDT
-Slope data source:               LDT  LDT  LDT
-Aspect data source:              LDT  LDT  LDT
-Curvature data source:           none none none
-LAI data source:                 none none none
-SAI data source:                 none none none
-Albedo data source:              LDT  LDT  LDT
-Max snow albedo data source:     LDT  LDT  LDT
-Greenness data source:           LDT  LDT  LDT
-Roughness data source:           none none none
-Porosity data source:            none none none
-Ksat data source:                none none none
-B parameter data source:         none none none
-Quartz data source:              none none none
-Emissivity data source:          none none none
-
-TBOT skin temperature update option: 0
-TBOT skin temperature lag days: 0
-
-#------------------------------------------------------------------------------
 # Land surface models
 #------------------------------------------------------------------------------
 
-Noah.3.6 model timestep:                  36ss 12ss 4ss
+Noah.3.6 model timestep:                  *D1TS* *D2TS* *D3TS*
 Noah.3.6 restart output interval:         1mo  1mo  1mo
-Noah.3.6 restart file: ./LIS_RST_NOAH36_200705041200.d01.nc  ./LIS_RST_NOAH36_200701191200.d02.nc ./LIS_RST_NOAH36_200701191200.d03.nc
+Noah.3.6 restart file:                    *RSTFILED1* *RSTFILED2* *RSTFILED3*
 Noah.3.6 vegetation parameter table:      LS_PARAMETERS/noah36_parms/VEGPARM.TBL LS_PARAMETERS/noah36_parms/VEGPARM.TBL LS_PARAMETERS/noah36_parms/VEGPARM.TBL
 Noah.3.6 soil parameter table:            LS_PARAMETERS/noah3X_parms/SOILPARM.TBL.WRF-3.9 LS_PARAMETERS/noah3X_parms/SOILPARM.TBL.WRF-3.9 LS_PARAMETERS/noah3X_parms/SOILPARM.TBL.WRF-3.9
 Noah.3.6 general parameter table:         LS_PARAMETERS/noah36_parms/GENPARM.TBL LS_PARAMETERS/noah36_parms/GENPARM.TBL LS_PARAMETERS/noah36_parms/GENPARM.TBL
@@ -199,5 +170,5 @@ Irrigation scheme: none none none
 # Specific output writing time (hour):   12
 # Specific output writing time (minute):  0
 # Specific output writing time (second):  0
-Model output attributes file:   './NOAH36_OUTPUT_LIST.TBL'
+Model output attributes file:   *MODELOUTPUTFILETBL*
 

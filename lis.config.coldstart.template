@@ -4,14 +4,14 @@
 #------------------------------------------------------------------------------
 Running mode: 		         retrospective
 Map projection of the LIS domain:  lambert
-Number of nests:    1
+Number of nests:    *NUMNESTS*
 Number of surface model types:    1
 Surface model types:            LSM
 Surface model output interval:  1hr 1da 1da
-Land surface model:             Noah.3.6
+Land surface model:             *LSMMODEL*
 Number of met forcing sources:   1
 Blending method for forcings:    overlay
-Met forcing sources:             "NLDAS2"
+Met forcing sources:             *METFORCING*
 Topographic correction method (met forcing): "none" 
 Enable spatial downscaling of precipitation: 0 0 0 
 Spatial interpolation method (met forcing):  budget-bilinear budget-bilinear budget-bilinear
@@ -21,7 +21,7 @@ Spatial upscaling method (met forcing): average
 #------------------------------------------------------------------------------
 # Runtime options
 #------------------------------------------------------------------------------
-Forcing variables list file:               ./forcing_variables.txt
+Forcing variables list file:               *FORCINGVARSFILE*
 Output methodology:                        "2d gridspace" 
 Output forcing:                            1   #1-yes
 Output parameters:                         0   #0- no
@@ -29,16 +29,16 @@ Output model restart files:                1
 Output data format:                        netcdf
 Output naming style:                       "4 level hierarchy"
 Start mode:                                coldstart  
-Starting year:                             %STARTYEAR%
-Starting month:                            %STARTMONTH%
-Starting day:                              %STARTDAY%
-Starting hour:                             %STARTHOUR%
+Starting year:                             *STARTYEAR*
+Starting month:                            *STARTMONTH*
+Starting day:                              *STARTDAY*
+Starting hour:                             *STARTHOUR*
 Starting minute:                           0  
 Starting second:                           0  
-Ending year:                               %ENDYEAR%
-Ending month:                              %ENDMONTH%
-Ending day:                                %ENDDAY%
-Ending hour:                               %ENDHOUR% 
+Ending year:                               *ENDYEAR*
+Ending month:                              *ENDMONTH*
+Ending day:                                *ENDDAY*
+Ending hour:                               *ENDHOUR* 
 Ending minute:                             0
 Ending second:                             0
 Undefined value:                          -9999
@@ -59,8 +59,8 @@ Maximum number of slope bands per grid:            1
 Minimum cutoff percentage (slope bands):           0.10
 Maximum number of aspect bands per grid:           1
 Minimum cutoff percentage (aspect bands):          0.10
-Number of processors along x:   %NPX%
-Number of processors along y:   %NPY%
+Number of processors along x:   *NPX*
+Number of processors along y:   *NPY*
 Halo size along x: 0 
 Halo size along y: 0 
 
@@ -163,12 +163,12 @@ IMS data directory:                       none
 #------------------------------------------------------------------------------
 # Model output configuration
 #------------------------------------------------------------------------------
-Output start year:     %OUTYEAR% # During spinup from coldstart
-Output start month:    %OUTMONTH%   # During spinup from coldstart
-Output start day:      %OUTDAY%   # During spinup from coldstart
-Output start hour:     %OUTHOUR%
-Output start minutes:   %OUTMINUTE%
-Output start seconds:   %OUTSECOND%
+Output start year:     *OUTYEAR* # During spinup from coldstart
+Output start month:    *OUTMONTH*   # During spinup from coldstart
+Output start day:      *OUTDAY*   # During spinup from coldstart
+Output start hour:     *OUTHOUR*
+Output start minutes:   *OUTMIN*
+Output start seconds:   *OUTSEC*
 #Output at specific time only: 1          # During spinup from coldstart
 #Specific output writing time (year):   2007  # During spinup from coldstart
 #Specific output writing time (month):   05  # During spinup from coldstart
@@ -176,4 +176,4 @@ Output start seconds:   %OUTSECOND%
 #Specific output writing time (hour):   12  # During spinup from coldstart
 #Specific output writing time (minute):  0
 #Specific output writing time (second):  0
-Model output attributes file:   './NOAH36_OUTPUT_LIST_SPINUP.TBL'
+Model output attributes file:   *MODELOUTPUTFILETBL*

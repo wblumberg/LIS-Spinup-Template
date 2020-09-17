@@ -1,0 +1,34 @@
+Noah.3.6 model timestep:                  "15mn"
+Noah.3.6 restart output interval:         "1mo"
+Noah.3.6 restart file:                    none  #./LIS_RST_NOAH33_201301300000.d01.nc
+Noah.3.6 vegetation parameter table:      ./LS_PARAMETERS/noah36_parms/VEGPARM.TBL
+Noah.3.6 soil parameter table:            ./LS_PARAMETERS/noah3X_parms/SOILPARM.TBL.2017
+Noah.3.6 general parameter table:         ./LS_PARAMETERS/noah36_parms/GENPARM.TBL
+Noah.3.6 use PTF for mapping soil properties: 0 #specifies if pedotransfer functions are to be used for mapping soil properties (0-do not use, 1-use)
+Noah.3.6 soils scheme:                    2   #1:Zobler, 2:STATSGO
+Noah.3.6 number of soil layers:           4
+Noah.3.6 layer thicknesses:               0.1  0.3  0.6  1.0
+Noah.3.6 use distributed soil depth map:  0 # do not use
+Noah.3.6 use distributed root depth map:  0 # do not use
+Noah.3.6 initial skin temperature:        290.0  290.0  290.0  290.0
+Noah.3.6 initial soil temperatures:       290.0  290.0  290.0  290.0
+Noah.3.6 initial total soil moistures:    0.200 0.200 0.200 0.200
+Noah.3.6 initial liquid soil moistures:   0.200 0.200 0.200 0.020
+Noah.3.6 initial canopy water:            0.0
+Noah.3.6 initial snow depth:              0.0
+Noah.3.6 initial snow equivalent:         0.0
+Noah.3.6 fixed max snow albedo:           0.0    # fraction; 0.0 - do not fix
+Noah.3.6 fixed deep soil temperature:     0.0    # Kelvin; 0.0 - do not fix
+Noah.3.6 fixed vegetation type:           0 # 0 - do not fix
+Noah.3.6 fixed soil type:                 0 # 0 - do not fix
+Noah.3.6 fixed slope type:                0 # 0 - do not fix
+Noah.3.6 sfcdif option:                   1 # 0 - previous SFCDIF; 1 - updated SFCDIF
+Noah.3.6 z0 veg-type dependence option:   0 # 0 - off; 1 - on; dependence of CZIL in SFCDIF
+Noah.3.6 Run UA snow-physics option:    .false.  # specifies whether to run the University of Arizona (UA) snow-physics option
+Noah.3.6 greenness fraction:  0.01  0.02  0.07  0.17  0.27  0.58  0.93  0.96  0.65  0.24  0.11  0.02
+Noah.3.6 background albedo:   0.18  0.17  0.16  0.15  0.15  0.15  0.15  0.16  0.16  0.17  0.17  0.18
+Noah.3.6 background roughness length: 0.020 0.020 0.025 0.030 0.035 0.036 0.035 0.030 0.027 0.025 0.020 0.020
+Noah.3.6 reference height for forcing T and q:    2.0  #2.0  2.0
+Noah.3.6 reference height for forcing u and v:   10.0  #10.0 10.0
+
+

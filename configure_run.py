@@ -2,10 +2,17 @@ import glob
 import sys
 import os
 
-# Check for geo_em and namelist.wps
+forcing_options = ['MERRA2', 'MERRA-Land', 'GDAS', "NLDAS2"]
+lsm_options = ["noah36", "noahmp36", "noah33"]
+lu_options = ['USGS', "UMD", "MODIS"]
 
-namelist = glob.glob('namelist.wps')
-geo_em = glob.glob('geo_em*.nc')
+wrf_dir = './'
+
+# Check for geo_em and namelist.wps
+namelist = glob.glob(wrf_dir + 'namelist.wps')
+geo_em = glob.glob(wrf_dir + 'geo_em*.nc')
+real_namelist = glob.glob(wrf_dir + 'namelist.input.real')
+wrf_namelist = glob.glob(wrf_dir + 'namelist.input.wrf')
 
 if len(namelist) == 0:
     print("Missing namelist.wps")

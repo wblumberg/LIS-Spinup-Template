@@ -57,4 +57,3 @@ NARR domain y-dimension size:           386
 NARR domain z-dimension size:           30
 
 
-

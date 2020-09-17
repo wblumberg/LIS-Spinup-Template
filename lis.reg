@@ -3,14 +3,14 @@
 #SBATCH -o %DIR%/lis.out
 #SBATCH -e %DIR%/lis.err
 #SBATCH --account=s2094
-#SBATCH --ntasks=112
+#SBATCH --ntasks=*NTASKS*
 #SBATCH --constraint=hasw
 #SBATCH --qos=allnccs
 #SBATCH --time=04:00:00
 # source common file for modules and paths 
 source ./common.reg || exit 1 
 
-export MPIRUN='mpiexec_mpt -n 28'
+export MPIRUN='mpirun -n 28'
 #############################
 # BEGIN LIS SEGMENT
 #############################
@@ -60,7 +60,7 @@ fi
 
 # Run LIS
 #$MPIRUN ./LIS  || exit 1
-mpiexec_mpt -n $SLURM_NTASKS ./LIS  || exit 1
+mpirun -np $SLURM_NTASKS ./LIS  || exit 1
 
 # Need LIS files for ldt_postlis and WRF-LIS run
 cp OUTPUT/SURFACEMODEL/%Y/%Y%m%d/LIS_HIST* .

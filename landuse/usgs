@@ -25,9 +25,9 @@ Landmask spatial transform:     mode mode
 # Crop-Irrigation Parameters
 #------------------------------------------------------------------------------
 
-Incorporate crop information: .false. .false. .false.
-Irrigation type data source: none none none
-Irrigation fraction data source: none none none
+#Incorporate crop information: .false. .false. .false.
+#Irrigation type data source: none none none
+#Irrigation fraction data source: none none none
 
 #------------------------------------------------------------------------------
 # Soil Parameters
@@ -169,7 +169,4 @@ Bottom temperature upper right lon:    179.9950
 Bottom temperature resolution (dx):      0.010
 Bottom temperature resolution (dy):      0.010
 
-#------------------------------------------------------------------------------
-# Forcing Parameters
-#------------------------------------------------------------------------------
 

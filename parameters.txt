@@ -9,7 +9,7 @@ Soil fraction data source:       none none none
 Soil color data source:          none none none
 Elevation data source:           LDT  LDT  LDT
 Slope data source:               LDT  LDT  LDT
-Aspect data source:              none  LDT  LDT
+Aspect data source:              LDT  LDT  LDT
 Curvature data source:           none none none
 LAI data source:                 none none none
 SAI data source:                 none none none
@@ -22,5 +22,8 @@ Ksat data source:                none none none
 B parameter data source:         none none none
 Quartz data source:              none none none
 Emissivity data source:          none none none
+
+TBOT skin temperature update option: 0
+TBOT skin temperature lag days: 0
 
 

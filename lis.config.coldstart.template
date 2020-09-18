@@ -115,6 +115,7 @@ Noah.3.6 background roughness length: 0.020 0.020 0.025 0.030 0.035 0.036 0.035 
 Noah.3.6 reference height for forcing T and q:    2.0  2.0  2.0
 Noah.3.6 reference height for forcing u and v:   10.0  10.0 10.0
 
+Noah.3.6 removal of residual snow fix:  0 
 
 #------------------------------------------------------------------------------
 # Irrigation

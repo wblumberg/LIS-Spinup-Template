@@ -55,15 +55,15 @@ lu_options = ['USGS', "UMD", "MODIS"]
 lsm = "Noah.3.6" # ONLY Noah.3.6 supported right now
 landuse = 'MODIS'
 forcing = "NLDAS2"
-lis_start_sdt = '2012-05-01 00:00:00'
-lis_end_sdt = '2013-05-01 00:00:00'
-lis_out_sdt = '2013-04-30 12:00:00'
-wrf_start_sdt = '2013-05-01 00:00:00'
-wrf_end_sdt = '2013-05-02 00:00:00'
-wrf_time_step = '18ss'
+lis_start_sdt = '2006-05-22 12:00:00'
+lis_end_sdt = '2010-05-22 12:00:00'
+lis_out_sdt = '2010-05-22 12:00:00'
+wrf_start_sdt = '2010-05-22 12:00:00'
+wrf_end_sdt = '2010-05-23 12:00:00'
+wrf_time_step = '10ss'
 npx = 8
 npy = 14
-wrf_dir = '/discover/nobackup/wgblumbe/test_lis_deployment/' # NEEDS TO BE AN ABSOLUTE PATH - THIS IS THE DIRECTORY THE WRF RUN IS IN
+wrf_dir = '/discover/nobackup/wgblumbe/ksc_breeze/' # NEEDS TO BE AN ABSOLUTE PATH - THIS IS THE DIRECTORY THE WRF RUN IS IN
 ##########################################################################
 
 # Check for geo_em and namelist.wps
@@ -237,7 +237,7 @@ lis_end_dt = datetime.strptime(lis_end_sdt, '%Y-%m-%d %H:%M:%S')
 lis_restart_file = lis_end_dt.strftime(restart_file_fmt)
 lis_wrf = lis_wrf.replace('*RSTFILED1*', lis_restart_file)
 # Add in WRF time step for LSM timestep
-lis_wrf = lis_wrf.replace('*D1DS*', wrf_time_step)
+lis_wrf = lis_wrf.replace('*D1TS*', wrf_time_step)
 
 print("\nCompleted setting up ldt.config and lis.config files.")
 

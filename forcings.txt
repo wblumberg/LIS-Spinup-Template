@@ -50,6 +50,9 @@ GFS domain y-dimension size: 256
 GFS number of forcing variables: 10
 
 MERRA-Land forcing directory:           ./MET_FORCING/MERRA-Land/
+MERRA forcing direcotry:                ./MET_FORCING/MERRA2/
+MERRA2 use lowest model level forcing:  1
+MERRA2 use corrected total precipitation:  1
 
 NARR forcing directory:                 ./MET_FORCING/NARR/
 NARR domain x-dimension size:           768

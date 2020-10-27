@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # Parameters
 #------------------------------------------------------------------------------
-LIS domain and parameter data file: lis_input.d01.nc
+LIS domain and parameter data file: lis_input.d01.nc lis_input.d02.nc lis_input.d03.nc
 Landmask data source:            LDT LDT LDT
 Landcover data source:           LDT LDT LDT
 Soil texture data source:        LDT LDT LDT

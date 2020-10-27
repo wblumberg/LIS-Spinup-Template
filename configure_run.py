@@ -54,16 +54,16 @@ lu_options = ['USGS', "UMD", "MODIS"]
 
 lsm = "Noah.3.6" # ONLY Noah.3.6 supported right now
 landuse = 'MODIS'
-forcing = "NLDAS2"
-lis_start_sdt = '2006-05-22 12:00:00'
-lis_end_sdt = '2010-05-22 12:00:00'
-lis_out_sdt = '2010-05-22 12:00:00'
-wrf_start_sdt = '2010-05-22 12:00:00'
-wrf_end_sdt = '2010-05-23 12:00:00'
-wrf_time_step = '10ss'
+forcing = "MERRA2"
+lis_start_sdt = '2015-03-29 00:00:00'
+lis_end_sdt = '2019-04-29 00:00:00'
+lis_out_sdt = '2019-03-25 00:00:00'
+wrf_start_sdt = '2019-05-29 00:00:00'
+wrf_end_sdt = '2019-05-30 00:00:00'
+wrf_time_step = '18ss'
 npx = 8
 npy = 14
-wrf_dir = '/discover/nobackup/wgblumbe/ksc_breeze/' # NEEDS TO BE AN ABSOLUTE PATH - THIS IS THE DIRECTORY THE WRF RUN IS IN
+wrf_dir = '/discover/nobackup/wgblumbe/fang_simulation/' # NEEDS TO BE AN ABSOLUTE PATH - THIS IS THE DIRECTORY THE WRF RUN IS IN
 ##########################################################################
 
 # Check for geo_em and namelist.wps

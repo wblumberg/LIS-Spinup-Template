@@ -1,6 +1,6 @@
 LDT running mode:                  "LSM parameter processing"
 #LSM parameter attributes file:     ./param_attribs_mfrda.txt ./param_attribs_modis.txt ./param_attribs_modis.txt
-Processed LSM parameter filename:  ./lis_input.d01.nc  
+Processed LSM parameter filename:  ./lis_input.d01.nc ./lis_input.d02.nc ./lis_input.d03.nc 
 LIS number of nests:    *NUMNESTS*
 Number of surface model types:         1
 Surface model types:                  LSM        # LSM | Lake
